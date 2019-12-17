@@ -42,3 +42,6 @@ web:
     speech:
       path: e://wechat//speech//
       type: 3
+
+#logging:
+#  config: classpath:log4j2.xml
