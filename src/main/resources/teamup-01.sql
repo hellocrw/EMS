@@ -1,6 +1,8 @@
+create database teamup_01;
+
 create table classInformation(
   id integer primary key,
-  classNo integer not null.
+  classNo integer not null,
   className varchar(64) not null,
   professionNo integer not null,
   professionName varchar(64) not null,
@@ -93,6 +95,5 @@ archivesWhereabouts(
   receivingAddress	varchar(255) not null,
   contactPerson varchar(20) not null,
   contactPhone	integer not null,
-  code integer not null,
-
+  postCode integer not null,
 )
