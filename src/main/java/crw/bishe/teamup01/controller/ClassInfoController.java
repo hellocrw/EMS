@@ -23,7 +23,7 @@ public class ClassInfoController {
     @GetMapping(value = "/all")
     @ResponseBody
     public List<ClassInfo> getClassInfo(){
-        log.info("log4j2测试");
+        log.info("查询班级所有人的信息");
         return classInfoService.getClassInfo();
     }
 }

@@ -1,0 +1,20 @@
+2019-12-18 18:59 [restartedMain] INFO  crw.bishe.teamup01.Teamup01Application - Starting Teamup01Application on PC-201909231002 with PID 4364 (D:\teamup-01\target\classes started by Administrator in D:\teamup-01)
+2019-12-18 18:59 [restartedMain] INFO  crw.bishe.teamup01.Teamup01Application - No active profile set, falling back to default profiles: default
+2019-12-18 18:59 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-18 18:59 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-12-18 18:59 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-18 18:59 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-12-18 18:59 [restartedMain] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-18 18:59 [restartedMain] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2019-12-18 18:59 [restartedMain] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2019-12-18 18:59 [restartedMain] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2019-12-18 18:59 [restartedMain] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2019-12-18 18:59 [restartedMain] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-12-18 18:59 [restartedMain] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-12-18 18:59 [restartedMain] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-12-18 18:59 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-12-18 18:59 [restartedMain] INFO  crw.bishe.teamup01.Teamup01Application - Started Teamup01Application in 3.906 seconds (JVM running for 5.213)
+2019-12-18 18:59 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-18 18:59 [http-nio-8080-exec-9] INFO  crw.bishe.teamup01.controller.ClassInfoController - 查询班级所有人的信息
+2019-12-18 18:59 [http-nio-8080-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-12-18 18:59 [http-nio-8080-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.

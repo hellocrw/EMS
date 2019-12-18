@@ -25,7 +25,7 @@ public class ClassInfo {
     private String nomitor;
 
     @Column(name = "monitor_tel")
-    private Integer monitorTel;
+    private String monitorTel;
 
     /**
      * @return id
@@ -128,14 +128,14 @@ public class ClassInfo {
     /**
      * @return monitor_tel
      */
-    public Integer getMonitorTel() {
+    public String getMonitorTel() {
         return monitorTel;
     }
 
     /**
      * @param monitorTel
      */
-    public void setMonitorTel(Integer monitorTel) {
+    public void setMonitorTel(String monitorTel) {
         this.monitorTel = monitorTel;
     }
 }

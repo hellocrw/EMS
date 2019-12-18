@@ -35,13 +35,13 @@ public class StudentInfo {
     private Date graduationTime;
 
     @Column(name = "stu_tel")
-    private Integer stuTel;
+    private String stuTel;
 
     @Column(name = "family_contact")
     private String familyContact;
 
     @Column(name = "home_tel")
-    private Integer homeTel;
+    private String homeTel;
 
     @Column(name = "home_address")
     private String homeAddress;
@@ -203,14 +203,14 @@ public class StudentInfo {
     /**
      * @return stu_tel
      */
-    public Integer getStuTel() {
+    public String getStuTel() {
         return stuTel;
     }
 
     /**
      * @param stuTel
      */
-    public void setStuTel(Integer stuTel) {
+    public void setStuTel(String stuTel) {
         this.stuTel = stuTel;
     }
 
@@ -231,14 +231,14 @@ public class StudentInfo {
     /**
      * @return home_tel
      */
-    public Integer getHomeTel() {
+    public String getHomeTel() {
         return homeTel;
     }
 
     /**
      * @param homeTel
      */
-    public void setHomeTel(Integer homeTel) {
+    public void setHomeTel(String homeTel) {
         this.homeTel = homeTel;
     }
 

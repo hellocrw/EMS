@@ -14,7 +14,7 @@ public class CounselorInfo {
     private String couName;
 
     @Column(name = "cou_phone")
-    private Integer couPhone;
+    private String couPhone;
 
     @Column(name = "cou_profession")
     private String couProfession;
@@ -64,14 +64,14 @@ public class CounselorInfo {
     /**
      * @return cou_phone
      */
-    public Integer getCouPhone() {
+    public String getCouPhone() {
         return couPhone;
     }
 
     /**
      * @param couPhone
      */
-    public void setCouPhone(Integer couPhone) {
+    public void setCouPhone(String couPhone) {
         this.couPhone = couPhone;
     }
 

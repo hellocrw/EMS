@@ -29,7 +29,7 @@ public class ArchivesWhereAbouts {
     private String contactPerson;
 
     @Column(name = "contact_phone")
-    private Integer contactPhone;
+    private String contactPhone;
 
     @Column(name = "post_code")
     private Integer postCode;
@@ -149,14 +149,14 @@ public class ArchivesWhereAbouts {
     /**
      * @return contact_phone
      */
-    public Integer getContactPhone() {
+    public String getContactPhone() {
         return contactPhone;
     }
 
     /**
      * @param contactPhone
      */
-    public void setContactPhone(Integer contactPhone) {
+    public void setContactPhone(String contactPhone) {
         this.contactPhone = contactPhone;
     }
 

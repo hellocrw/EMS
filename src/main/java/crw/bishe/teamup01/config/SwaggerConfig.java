@@ -21,7 +21,6 @@ public class SwaggerConfig {
                 .apis(RequestHandlerSelectors.basePackage("crw.bishe.teamup01.controller"))
                 .paths(PathSelectors.any())
                 .build();
-
     }
 
     private ApiInfo apiInfo() {
