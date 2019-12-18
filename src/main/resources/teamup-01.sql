@@ -96,4 +96,8 @@ CREATE TABLE archivesWhereabouts(
   post_code integer not null
 )
 
-insert into classInformation values ()
+insert into classInformation values (161543218,"计科2班",161542,"计算机科学与技术",54,"豪宗超1",13229451650);
+insert into classInformation values (161543218,"计科2班",161542,"计算机科学与技术",54,"豪宗超2",13229451650);
+insert into classInformation values (161543318,"计科3班",161543,"计算机科学与技术",54,"豪宗超3",13229451650);
+insert into classInformation values (161543318,"计科3班",161543,"计算机科学与技术",54,"豪宗超4",13229451650);
+insert into classInformation values (161543418,"计科4班",161544,"计算机科学与技术",54,"豪宗超5",13229451650);
