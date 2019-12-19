@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="crw.bishe.teamup01.mapper.ArchivesWhereAboutsMapper">
-  <resultMap id="BaseResultMap" type="crw.bishe.teamup01.entity.ArchivesWhereAbouts">
+<mapper namespace="crw.bishe.team.mapper.ArchivesWhereAboutsMapper">
+  <resultMap id="BaseResultMap" type="crw.bishe.team.entity.ArchivesWhereAbouts">
     <!--
       WARNING - @mbg.generated
     -->
@@ -13,7 +13,7 @@
     <result column="archive_recipient" jdbcType="VARCHAR" property="archiveRecipient" />
     <result column="receiving_address" jdbcType="VARCHAR" property="receivingAddress" />
     <result column="contact_person" jdbcType="VARCHAR" property="contactPerson" />
-    <result column="contact_phone" jdbcType="INTEGER" property="contactPhone" />
+    <result column="contact_phone" jdbcType="VARCHAR" property="contactPhone" />
     <result column="post_code" jdbcType="INTEGER" property="postCode" />
   </resultMap>
 </mapper>

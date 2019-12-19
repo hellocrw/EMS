@@ -3,7 +3,6 @@
         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 
 <generatorConfiguration>
-
     <context id="Mysql" targetRuntime="MyBatis3Simple" defaultModelType="flat">
         <property name="beginningDelimiter" value="`"/>
         <property name="endingDelimiter" value="`"/>
@@ -29,14 +28,15 @@
                              targetProject="src/main/java"
                              type="XMLMAPPER"/>
 
-        <table tableName="archives_where_abouts"/>
-        <table tableName="class_info"/>
-        <table tableName="counselor_info"/>
-        <table tableName="employ_style_pre"/>
-        <table tableName="job_info"/>
-        <table tableName="stu_employ_info"/>
-        <table tableName="student_info"/>
-        <table tableName="unit_info"/>
+        <!--<table tableName="archives_where_abouts"/>-->
+        <!--<table tableName="class_info"/>-->
+        <!--<table tableName="counselor_info"/>-->
+        <!--<table tableName="employ_style_pre"/>-->
+        <!--<table tableName="job_info"/>-->
+        <!--<table tableName="stu_employ_info"/>-->
+        <!--<table tableName="student_info"/>-->
+        <!--<table tableName="unit_info"/>-->
+        <table tableName="file_info"/>
 
     </context>
 </generatorConfiguration>

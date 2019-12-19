@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="crw.bishe.teamup01.mapper.ClassInfoMapper">
-  <resultMap id="BaseResultMap" type="crw.bishe.teamup01.entity.ClassInfo">
+<mapper namespace="crw.bishe.team.mapper.ClassInfoMapper">
+  <resultMap id="BaseResultMap" type="crw.bishe.team.entity.ClassInfo">
     <!--
       WARNING - @mbg.generated
     -->
@@ -12,6 +12,6 @@
     <result column="profession_name" jdbcType="VARCHAR" property="professionName" />
     <result column="class_num" jdbcType="INTEGER" property="classNum" />
     <result column="nomitor" jdbcType="CHAR" property="nomitor" />
-    <result column="monitor_tel" jdbcType="INTEGER" property="monitorTel" />
+    <result column="monitor_tel" jdbcType="VARCHAR" property="monitorTel" />
   </resultMap>
 </mapper>

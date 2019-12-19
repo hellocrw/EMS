@@ -25,11 +25,14 @@ spring:
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
   jackson:
     default-property-inclusion: non_null
+
 mybatis:
   # 指定sql映射文件位置
   mapper-locations: classpath:mapping/*.xml
   #mybatis
-  type-aliases-package: tk.mybatis.springboot.model
+  configuration:
+    map-underscore-to-camel-case: true
+  type-aliases-package: crw.bishe.teamup01.entity
 
 web:
   upload:
@@ -45,3 +48,10 @@ web:
 
 #logging:
 #  config: classpath:log4j2.xml
+
+file:
+  upload:
+    url: D:\upload\
+
+server:
+  port: 8080
