@@ -42,6 +42,12 @@
             <artifactId>log4j-slf4j-impl</artifactId>
             <version>2.11.0</version>
         </dependency>
+        <!-- 引入缓存 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-cache</artifactId>
+            <version>2.2.2.RELEASE</version>
+        </dependency>
         <!--test测试启动器 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

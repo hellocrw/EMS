@@ -4,7 +4,7 @@ spring:
     username: root
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/teamup_02
+    url: jdbc:mysql://127.0.0.1:3306/team_01
 #    type: com.alibaba.druid.pool.DruidDataSource
     #   数据源其他配置
     initialSize: 5
@@ -32,7 +32,7 @@ mybatis:
   #mybatis
   configuration:
     map-underscore-to-camel-case: true
-  type-aliases-package: crw.bishe.teamup01.entity
+  type-aliases-package: crw.bishe.team.entity
 
 web:
   upload:
