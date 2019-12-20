@@ -25,7 +25,7 @@ public class SwaggerConfig {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("后端测试接口")
+                .title("大学生组队系统后端测试接口")
                 .description("team-01后端测试接口")
                 .termsOfServiceUrl("none")
                 .version("1.0").build();

@@ -4,7 +4,7 @@ spring:
     username: root
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/team_01
+    url: jdbc:mysql://127.0.0.1:3306/team_01?characterEncoding=utf-8&useSSL=false
 #    type: com.alibaba.druid.pool.DruidDataSource
     #   数据源其他配置
     initialSize: 5
@@ -25,6 +25,8 @@ spring:
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
   jackson:
     default-property-inclusion: non_null
+  thymeleaf:
+    cache: false
 
 mybatis:
   # 指定sql映射文件位置

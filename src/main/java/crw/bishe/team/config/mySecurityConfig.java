@@ -18,15 +18,15 @@
 //public class mySecurityConfig extends WebSecurityConfigurerAdapter {
 //    @Override
 //    protected void configure(HttpSecurity http) throws Exception {
-//        //super.configure(http);
-//        //定制请求的授权规则
-//        http.authorizeRequests().antMatchers("/").permitAll()
-//                .antMatchers("/level1/**").hasRole("VIP1")
-//                .antMatchers("/level2/**").hasRole("VIP2")
-//                .antMatchers("/level3/**").hasRole("VIP3");
+//        super.configure(http);
+////        定制请求的授权规则
+//            http.authorizeRequests().antMatchers("/").permitAll()
+//                    .antMatchers("/level1/**").hasRole("VIP1")
+//                    .antMatchers("/level2/**").hasRole("VIP2")
+//                    .antMatchers("/level3/**").hasRole("VIP3");
 //
 //        //开启自动配置的登陆功能，效果，如果没有登陆，没有权限就会来到登陆页面
-//        http.formLogin().usernameParameter("user").passwordParameter("pwd").loginPage("/userlogin");
+//        http.formLogin().usernameParameter("useruame").passwordParameter("password").loginPage("/login");
 //        //1、 /login 来到登陆页
 //        //2、重定向到/login?error表示登陆失败
 //        //3、更多详细功能

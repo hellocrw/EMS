@@ -28,10 +28,10 @@
                              targetProject="src/main/java"
                              type="XMLMAPPER"/>
 
-        <table tableName="pro_info"/>
-        <table tableName="user_info"/>
-        <table tableName="team_info"/>
-        <table tableName="user_team_info"/>
+        <!--<table tableName="pro_info"/>-->
+        <!--<table tableName="user_info"/>-->
+        <!--<table tableName="team_info"/>-->
+        <table tableName="log_info"/>
 
     </context>
 </generatorConfiguration>

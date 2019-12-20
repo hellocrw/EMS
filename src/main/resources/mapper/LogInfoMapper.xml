@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="crw.bishe.team.mapper.LogInfoMapper">
+  <resultMap id="BaseResultMap" type="crw.bishe.team.entity.LogInfo">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="log_id" jdbcType="INTEGER" property="logId" />
+    <result column="operator" jdbcType="VARCHAR" property="operator" />
+    <result column="operate_type" jdbcType="VARCHAR" property="operateType" />
+    <result column="operate_date" jdbcType="DATE" property="operateDate" />
+    <result column="operate_result" jdbcType="VARCHAR" property="operateResult" />
+  </resultMap>
+</mapper>

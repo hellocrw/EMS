@@ -6,7 +6,6 @@ import io.swagger.annotations.ApiOperation;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.RequestEntity;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -40,6 +39,15 @@ public class UserInfoController {
             return new ResponseEntity<>( "登录成功", HttpStatus.OK);
         }else{
             return new ResponseEntity<>("登录失败", HttpStatus.BAD_REQUEST);
+        }
+    }
+
+    @GetMapping(value = "/delete/{id}")
+    public String deleteById(@RequestParam("id") int userId){
+        if (userInfoService.delectById(userId) > 0 ){
+            return "删除成功";
+        }else {
+            return "找不到id对应的数据";
         }
     }
 
