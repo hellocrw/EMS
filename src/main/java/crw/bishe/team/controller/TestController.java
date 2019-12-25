@@ -15,6 +15,16 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
     @GetMapping("/")
     public String demo(){
-        return "localhost:8080-->test";
+        return "首页";
+    }
+
+    @GetMapping(value = "/out")
+    public String logout(){
+        return "退出成功";
+    }
+
+    @GetMapping(value = "/fail")
+    public String fail(){
+        return "失败";
     }
 }

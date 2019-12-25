@@ -101,6 +101,8 @@ public class DruidConfig {
         reg.addUrlMappings("/druid/*");
         reg.addInitParameter("loginUsername", this.username);
         reg.addInitParameter("loginPassword", this.password);
+        //是否能够重置数据 禁用HTML页面上的“Reset All”功能
+        reg.addInitParameter("resetEnable", "false");
         return reg;
     }
 
@@ -109,7 +111,7 @@ public class DruidConfig {
         FilterRegistrationBean filterRegistrationBean = new FilterRegistrationBean();
         filterRegistrationBean.setFilter(new WebStatFilter());
         filterRegistrationBean.addUrlPatterns("/*");
-        filterRegistrationBean.addInitParameter("exclusions", "*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*");
+        filterRegistrationBean.addInitParameter("exclusions", "*.js,*.html,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*");
         filterRegistrationBean.addInitParameter("profileEnable", "true");
         return filterRegistrationBean;
     }
