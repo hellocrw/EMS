@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.util.List;
 
 /**
- * @Description Description
+ * @Description 日志管理工具类
  * @Author crw
  * @Date Created in 2019/12/20 0020
  * @Time 17:24

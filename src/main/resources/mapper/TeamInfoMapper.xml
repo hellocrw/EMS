@@ -5,10 +5,12 @@
     <!--
       WARNING - @mbg.generated
     -->
-    <id column="team_id" jdbcType="VARCHAR" property="teamId" />
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="team_id" jdbcType="BIGINT" property="teamId" />
     <result column="team_name" jdbcType="VARCHAR" property="teamName" />
     <result column="team_describe" jdbcType="VARCHAR" property="teamDescribe" />
     <result column="team_number" jdbcType="INTEGER" property="teamNumber" />
     <result column="team_date" jdbcType="DATE" property="teamDate" />
+    <result column="status" jdbcType="TINYINT" property="status" />
   </resultMap>
 </mapper>

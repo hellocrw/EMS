@@ -1,17 +1,17 @@
-2019-12-25 17:15 [restartedMain] [INFO]  org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55)ev  el crw.bishe.team.TeamApplication - Starting TeamApplication on PC-201909231002 with PID 7284 (D:\team-01\target\classes started by Administrator in D:\team-01)
-2019-12-25 17:15 [restartedMain] [INFO]  org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651)ev  el crw.bishe.team.TeamApplication - No active profile set, falling back to default profiles: default
-2019-12-25 17:15 [restartedMain] [INFO]  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)ev  el org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2019-12-25 17:15 [restartedMain] [INFO]  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)ev  el org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2019-12-25 17:15 [restartedMain] [INFO]  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)ev  el org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
-2019-12-25 17:15 [restartedMain] [INFO]  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)ev  el org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2019-12-25 17:15 [restartedMain] [INFO]  crw.bishe.team.aop.WebLogAspect.doBefore(WebLogAspect.java:28)ev  el crw.bishe.team.aop.WebLogAspect - 调用方法 : DruidConfig--->目标方法名为:druidServlet
-2019-12-25 17:15 [restartedMain] [INFO]  crw.bishe.team.aop.WebLogAspect.doAfterReturning(WebLogAspect.java:34)ev  el crw.bishe.team.aop.WebLogAspect - 返回值 : statViewServlet urls=[/druid/*]
-2019-12-25 17:15 [restartedMain] [INFO]  crw.bishe.team.aop.WebLogAspect.doBefore(WebLogAspect.java:28)ev  el crw.bishe.team.aop.WebLogAspect - 调用方法 : DruidConfig--->目标方法名为:filterRegistrationBean
-2019-12-25 17:15 [restartedMain] [INFO]  crw.bishe.team.aop.WebLogAspect.doAfterReturning(WebLogAspect.java:34)ev  el crw.bishe.team.aop.WebLogAspect - 返回值 : filterRegistrationBean urls=[/*] order=2147483647
-2019-12-25 17:15 [restartedMain] [INFO]  crw.bishe.team.config.init.MyInitConfig_InitializingBean.afterPropertiesSet(MyInitConfig_InitializingBean.java:18)ev  el crw.bishe.team.config.init.MyInitConfig_InitializingBean - 实现InitializingBean接口实现项目初始化操作
-2019-12-25 17:15 [restartedMain] [INFO]  crw.bishe.team.aop.WebLogAspect.doBefore(WebLogAspect.java:28)ev  el crw.bishe.team.aop.WebLogAspect - 调用方法 : DruidConfig--->目标方法名为:dataSource
-2019-12-25 17:15 [restartedMain] [INFO]  crw.bishe.team.aop.WebLogAspect.doAfterReturning(WebLogAspect.java:34)ev  el crw.bishe.team.aop.WebLogAspect - 返回值 : {
-	CreateTime:"2019-12-25 17:15:11",
+2019-12-26 19:06 [restartedMain] [INFO]  org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55)ev  el crw.bishe.team.TeamApplication - Starting TeamApplication on PC-201909231002 with PID 6100 (D:\team-01\target\classes started by Administrator in D:\team-01)
+2019-12-26 19:06 [restartedMain] [INFO]  org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651)ev  el crw.bishe.team.TeamApplication - No active profile set, falling back to default profiles: default
+2019-12-26 19:06 [restartedMain] [INFO]  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)ev  el org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-26 19:06 [restartedMain] [INFO]  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)ev  el org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-12-26 19:06 [restartedMain] [INFO]  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)ev  el org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-26 19:06 [restartedMain] [INFO]  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)ev  el org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-12-26 19:06 [restartedMain] [INFO]  crw.bishe.team.aop.WebLogAspect.doBefore(WebLogAspect.java:28)ev  el crw.bishe.team.aop.WebLogAspect - 调用方法 : DruidConfig--->目标方法名为:druidServlet
+2019-12-26 19:06 [restartedMain] [INFO]  crw.bishe.team.aop.WebLogAspect.doAfterReturning(WebLogAspect.java:34)ev  el crw.bishe.team.aop.WebLogAspect - 返回值 : statViewServlet urls=[/druid/*]
+2019-12-26 19:06 [restartedMain] [INFO]  crw.bishe.team.aop.WebLogAspect.doBefore(WebLogAspect.java:28)ev  el crw.bishe.team.aop.WebLogAspect - 调用方法 : DruidConfig--->目标方法名为:filterRegistrationBean
+2019-12-26 19:06 [restartedMain] [INFO]  crw.bishe.team.aop.WebLogAspect.doAfterReturning(WebLogAspect.java:34)ev  el crw.bishe.team.aop.WebLogAspect - 返回值 : filterRegistrationBean urls=[/*] order=2147483647
+2019-12-26 19:06 [restartedMain] [INFO]  crw.bishe.team.config.init.MyInitConfig_InitializingBean.afterPropertiesSet(MyInitConfig_InitializingBean.java:18)ev  el crw.bishe.team.config.init.MyInitConfig_InitializingBean - 实现InitializingBean接口实现项目初始化操作
+2019-12-26 19:06 [restartedMain] [INFO]  crw.bishe.team.aop.WebLogAspect.doBefore(WebLogAspect.java:28)ev  el crw.bishe.team.aop.WebLogAspect - 调用方法 : DruidConfig--->目标方法名为:dataSource
+2019-12-26 19:06 [restartedMain] [INFO]  crw.bishe.team.aop.WebLogAspect.doAfterReturning(WebLogAspect.java:34)ev  el crw.bishe.team.aop.WebLogAspect - 返回值 : {
+	CreateTime:"2019-12-26 19:06:30",
 	ActiveCount:0,
 	PoolingCount:0,
 	CreateCount:0,
@@ -24,24 +24,14 @@
 
 [
 ]
-2019-12-25 17:15 [restartedMain] [INFO]  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69)ev  el springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2019-12-25 17:15 [restartedMain] [INFO]  crw.bishe.team.aop.WebLogAspect.doBefore(WebLogAspect.java:28)ev  el crw.bishe.team.aop.WebLogAspect - 调用方法 : SwaggerConfig--->目标方法名为:createRestApi
-2019-12-25 17:15 [restartedMain] [INFO]  crw.bishe.team.aop.WebLogAspect.doAfterReturning(WebLogAspect.java:34)ev  el crw.bishe.team.aop.WebLogAspect - 返回值 : springfox.documentation.spring.web.plugins.Docket@3c2bc95b
-2019-12-25 17:15 [restartedMain] [INFO]  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler.removeStaticCache(MapperCacheDisabler.java:60)ev  el tk.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2019-12-25 17:15 [restartedMain] [INFO]  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler.removeStaticCache(MapperCacheDisabler.java:60)ev  el tk.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2019-12-25 17:15 [restartedMain] [INFO]  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler.removeStaticCache(MapperCacheDisabler.java:60)ev  el tk.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2019-12-25 17:15 [restartedMain] [INFO]  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler.removeEntityHelperCache(MapperCacheDisabler.java:83)ev  el tk.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
-2019-12-25 17:15 [restartedMain] [INFO]  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:147)ev  el springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
-2019-12-25 17:15 [restartedMain] [INFO]  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:150)ev  el springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-2019-12-25 17:15 [restartedMain] [INFO]  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41)ev  el springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-2019-12-25 17:15 [restartedMain] [INFO]  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)ev  el org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2019-12-25 17:15 [restartedMain] [INFO]  org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61)ev  el crw.bishe.team.TeamApplication - Started TeamApplication in 4.484 seconds (JVM running for 5.645)
-2019-12-25 17:15 [restartedMain] [INFO]  crw.bishe.team.aop.WebLogAspect.doBefore(WebLogAspect.java:28)ev  el crw.bishe.team.aop.WebLogAspect - 调用方法 : MyInitConfig_CommandLineRunner--->目标方法名为:run
-2019-12-25 17:15 [restartedMain] [INFO]  crw.bishe.team.config.init.MyInitConfig_CommandLineRunner.run(MyInitConfig_CommandLineRunner.java:20)ev  el crw.bishe.team.config.init.MyInitConfig_CommandLineRunner - 实现CommandLineRunner接口，进行项目初始化操作
-2019-12-25 17:15 [restartedMain] [INFO]  crw.bishe.team.aop.WebLogAspect.doAfterReturning(WebLogAspect.java:34)ev  el crw.bishe.team.aop.WebLogAspect - 返回值 : null
-2019-12-25 17:15 [restartedMain] [INFO]  crw.bishe.team.aop.WebLogAspect.doBefore(WebLogAspect.java:28)ev  el crw.bishe.team.aop.WebLogAspect - 调用方法 : MyInitConfig_ApplicationRunner--->目标方法名为:run
-2019-12-25 17:15 [restartedMain] [INFO]  crw.bishe.team.config.init.MyInitConfig_ApplicationRunner.run(MyInitConfig_ApplicationRunner.java:19)ev  el crw.bishe.team.config.init.MyInitConfig_ApplicationRunner - 实现ApplicationRunner接口，在项目启动完成之前初始化操作
-2019-12-25 17:15 [restartedMain] [INFO]  crw.bishe.team.aop.WebLogAspect.doAfterReturning(WebLogAspect.java:34)ev  el crw.bishe.team.aop.WebLogAspect - 返回值 : null
-2019-12-25 17:15 [http-nio-8080-exec-2] [INFO]  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)ev  el org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-12-25 17:15 [http-nio-8080-exec-4] [INFO]  crw.bishe.team.aop.WebLogAspect.doBefore(WebLogAspect.java:28)ev  el crw.bishe.team.aop.WebLogAspect - 调用方法 : TestController--->目标方法名为:demo
-2019-12-25 17:15 [http-nio-8080-exec-4] [INFO]  crw.bishe.team.aop.WebLogAspect.doAfterReturning(WebLogAspect.java:34)ev  el crw.bishe.team.aop.WebLogAspect - 返回值 : 首页
+2019-12-26 19:06 [restartedMain] [INFO]  crw.bishe.team.aop.WebLogAspect.doBefore(WebLogAspect.java:28)ev  el crw.bishe.team.aop.WebLogAspect - 调用方法 : SwaggerConfig--->目标方法名为:createRestApi
+2019-12-26 19:06 [restartedMain] [INFO]  crw.bishe.team.aop.WebLogAspect.doAfterReturning(WebLogAspect.java:34)ev  el crw.bishe.team.aop.WebLogAspect - 返回值 : springfox.documentation.spring.web.plugins.Docket@6c8202ea
+2019-12-26 19:06 [restartedMain] [INFO]  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)ev  el org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-12-26 19:06 [restartedMain] [INFO]  org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61)ev  el crw.bishe.team.TeamApplication - Started TeamApplication in 4.779 seconds (JVM running for 6.281)
+2019-12-26 19:06 [restartedMain] [INFO]  crw.bishe.team.aop.WebLogAspect.doBefore(WebLogAspect.java:28)ev  el crw.bishe.team.aop.WebLogAspect - 调用方法 : MyInitConfig_CommandLineRunner--->目标方法名为:run
+2019-12-26 19:06 [restartedMain] [INFO]  crw.bishe.team.config.init.MyInitConfig_CommandLineRunner.run(MyInitConfig_CommandLineRunner.java:20)ev  el crw.bishe.team.config.init.MyInitConfig_CommandLineRunner - 实现CommandLineRunner接口，进行项目初始化操作
+2019-12-26 19:06 [restartedMain] [INFO]  crw.bishe.team.aop.WebLogAspect.doAfterReturning(WebLogAspect.java:34)ev  el crw.bishe.team.aop.WebLogAspect - 返回值 : null
+2019-12-26 19:06 [restartedMain] [INFO]  crw.bishe.team.aop.WebLogAspect.doBefore(WebLogAspect.java:28)ev  el crw.bishe.team.aop.WebLogAspect - 调用方法 : MyInitConfig_ApplicationRunner--->目标方法名为:run
+2019-12-26 19:06 [restartedMain] [INFO]  crw.bishe.team.config.init.MyInitConfig_ApplicationRunner.run(MyInitConfig_ApplicationRunner.java:19)ev  el crw.bishe.team.config.init.MyInitConfig_ApplicationRunner - 实现ApplicationRunner接口，在项目启动完成之前初始化操作
+2019-12-26 19:06 [restartedMain] [INFO]  crw.bishe.team.aop.WebLogAspect.doAfterReturning(WebLogAspect.java:34)ev  el crw.bishe.team.aop.WebLogAspect - 返回值 : null
+2019-12-26 19:06 [http-nio-8080-exec-2] [INFO]  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)ev  el org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'

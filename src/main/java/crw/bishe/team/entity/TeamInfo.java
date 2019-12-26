@@ -6,14 +6,19 @@ import javax.persistence.*;
 @Table(name = "team_info")
 public class TeamInfo {
     /**
-     * 队伍id
+     * ID
      */
     @Id
-    @Column(name = "team_id")
-    private String teamId;
+    private Long id;
 
     /**
-     * 队伍名称
+     * 团队ID
+     */
+    @Column(name = "team_id")
+    private Long teamId;
+
+    /**
+     * 团队名称
      */
     @Column(name = "team_name")
     private String teamName;
@@ -37,36 +42,59 @@ public class TeamInfo {
     private Date teamDate;
 
     /**
-     * 获取队伍id
-     *
-     * @return team_id - 队伍id
+     * 团队状态
      */
-    public String getTeamId() {
+    private Byte status;
+
+    /**
+     * 获取ID
+     *
+     * @return id - ID
+     */
+    public Long getId() {
+        return id;
+    }
+
+    /**
+     * 设置ID
+     *
+     * @param id ID
+     */
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    /**
+     * 获取团队ID
+     *
+     * @return team_id - 团队ID
+     */
+    public Long getTeamId() {
         return teamId;
     }
 
     /**
-     * 设置队伍id
+     * 设置团队ID
      *
-     * @param teamId 队伍id
+     * @param teamId 团队ID
      */
-    public void setTeamId(String teamId) {
+    public void setTeamId(Long teamId) {
         this.teamId = teamId;
     }
 
     /**
-     * 获取队伍名称
+     * 获取团队名称
      *
-     * @return team_name - 队伍名称
+     * @return team_name - 团队名称
      */
     public String getTeamName() {
         return teamName;
     }
 
     /**
-     * 设置队伍名称
+     * 设置团队名称
      *
-     * @param teamName 队伍名称
+     * @param teamName 团队名称
      */
     public void setTeamName(String teamName) {
         this.teamName = teamName;
@@ -124,5 +152,23 @@ public class TeamInfo {
      */
     public void setTeamDate(Date teamDate) {
         this.teamDate = teamDate;
+    }
+
+    /**
+     * 获取团队状态
+     *
+     * @return status - 团队状态
+     */
+    public Byte getStatus() {
+        return status;
+    }
+
+    /**
+     * 设置团队状态
+     *
+     * @param status 团队状态
+     */
+    public void setStatus(Byte status) {
+        this.status = status;
     }
 }

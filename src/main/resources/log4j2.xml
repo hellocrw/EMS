@@ -84,8 +84,8 @@
         <logger name="org.springframework" level="info" additivity="false"></logger>
         <Logger name="org.mybatis" level="info" additivity="false"></Logger>
         <!--<logger name="org.apache" level="info" additivity="false"></logger>-->
-        <!--<logger name="tk.mybatis" level="info" additivity="false"></logger>-->
-        <!--<logger name="springfox.documentation" level="info" additivity="false"></logger>-->
+        <logger name="tk.mybatis" level="info" additivity="false"></logger>
+        <logger name="springfox.documentation" level="info" additivity="false"></logger>
 
         <root level="info">
             <appender-ref ref="Console"/>

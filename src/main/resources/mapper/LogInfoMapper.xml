@@ -5,10 +5,12 @@
     <!--
       WARNING - @mbg.generated
     -->
-    <id column="log_id" jdbcType="INTEGER" property="logId" />
-    <result column="operator" jdbcType="VARCHAR" property="operator" />
-    <result column="operate_type" jdbcType="VARCHAR" property="operateType" />
-    <result column="operate_date" jdbcType="DATE" property="operateDate" />
-    <result column="operate_result" jdbcType="VARCHAR" property="operateResult" />
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="log_id" jdbcType="BIGINT" property="logId" />
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="type" jdbcType="VARCHAR" property="type" />
+    <result column="time" jdbcType="DATE" property="time" />
+    <result column="result" jdbcType="VARCHAR" property="result" />
   </resultMap>
 </mapper>

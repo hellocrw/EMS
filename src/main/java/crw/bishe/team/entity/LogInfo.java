@@ -6,141 +6,167 @@ import javax.persistence.*;
 @Table(name = "log_info")
 public class LogInfo {
     /**
-     * 日志id
+     * ID
      */
     @Id
-    @Column(name = "log_id")
-    private Integer logId;
+    private Long id;
 
     /**
-     * 操作者
+     * 日志ID
      */
-    private String operator;
+    @Column(name = "log_id")
+    private Long logId;
+
+    /**
+     * 用户ID
+     */
+    @Column(name = "user_id")
+    private Long userId;
+
+    /**
+     * 用户
+     */
+    @Column(name = "user_name")
+    private String userName;
 
     /**
      * 操作类型
      */
-    @Column(name = "operate_type")
-    private String operateType;
+    private String type;
 
     /**
      * 操作时间
      */
-    @Column(name = "operate_date")
-    private Date operateDate;
+    private Date time;
 
     /**
      * 操作结果
      */
-    @Column(name = "operate_result")
-    private String operateResult;
+    private String result;
 
     /**
-     * 获取日志id
+     * 获取ID
      *
-     * @return log_id - 日志id
+     * @return id - ID
      */
-    public Integer getLogId() {
+    public Long getId() {
+        return id;
+    }
+
+    /**
+     * 设置ID
+     *
+     * @param id ID
+     */
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    /**
+     * 获取日志ID
+     *
+     * @return log_id - 日志ID
+     */
+    public Long getLogId() {
         return logId;
     }
 
     /**
-     * 设置日志id
+     * 设置日志ID
      *
-     * @param logId 日志id
+     * @param logId 日志ID
      */
-    public void setLogId(Integer logId) {
+    public void setLogId(Long logId) {
         this.logId = logId;
     }
 
     /**
-     * 获取操作者
+     * 获取用户ID
      *
-     * @return operator - 操作者
+     * @return user_id - 用户ID
      */
-    public String getOperator() {
-        return operator;
+    public Long getUserId() {
+        return userId;
     }
 
     /**
-     * 设置操作者
+     * 设置用户ID
      *
-     * @param operator 操作者
+     * @param userId 用户ID
      */
-    public void setOperator(String operator) {
-        this.operator = operator;
+    public void setUserId(Long userId) {
+        this.userId = userId;
+    }
+
+    /**
+     * 获取用户
+     *
+     * @return user_name - 用户
+     */
+    public String getUserName() {
+        return userName;
+    }
+
+    /**
+     * 设置用户
+     *
+     * @param userName 用户
+     */
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     /**
      * 获取操作类型
      *
-     * @return operate_type - 操作类型
+     * @return type - 操作类型
      */
-    public String getOperateType() {
-        return operateType;
+    public String getType() {
+        return type;
     }
 
     /**
      * 设置操作类型
      *
-     * @param operateType 操作类型
+     * @param type 操作类型
      */
-    public void setOperateType(String operateType) {
-        this.operateType = operateType;
+    public void setType(String type) {
+        this.type = type;
     }
 
     /**
      * 获取操作时间
      *
-     * @return operate_date - 操作时间
+     * @return time - 操作时间
      */
-    public Date getOperateDate() {
-        return operateDate;
+    public Date getTime() {
+        return time;
     }
 
     /**
      * 设置操作时间
      *
-     * @param operateDate 操作时间
+     * @param time 操作时间
      */
-    public void setOperateDate(Date operateDate) {
-        this.operateDate = operateDate;
+    public void setTime(Date time) {
+        this.time = time;
     }
 
     /**
      * 获取操作结果
      *
-     * @return operate_result - 操作结果
+     * @return result - 操作结果
      */
-    public String getOperateResult() {
-        return operateResult;
+    public String getResult() {
+        return result;
     }
 
     /**
      * 设置操作结果
      *
-     * @param operateResult 操作结果
+     * @param result 操作结果
      */
-    public void setOperateResult(String operateResult) {
-        this.operateResult = operateResult;
-    }
-
-    @Override
-    public String toString() {
-        return "LogInfo{" +
-                "logId=" + logId +
-                ", operator='" + operator + '\'' +
-                ", operateType='" + operateType + '\'' +
-                ", operateDate=" + operateDate +
-                ", operateResult='" + operateResult + '\'' +
-                '}';
-    }
-
-    public LogInfo(Integer logId, String operator, String operateType, Date operateDate, String operateResult) {
-        this.logId = logId;
-        this.operator = operator;
-        this.operateType = operateType;
-        this.operateDate = operateDate;
-        this.operateResult = operateResult;
+    public void setResult(String result) {
+        this.result = result;
     }
 }

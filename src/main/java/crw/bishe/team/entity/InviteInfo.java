@@ -1,9 +1,10 @@
 package crw.bishe.team.entity;
 
+import java.util.Date;
 import javax.persistence.*;
 
-@Table(name = "user_team_info")
-public class UserTeamInfo {
+@Table(name = "invite_info")
+public class InviteInfo {
     /**
      * ID
      */
@@ -11,13 +12,7 @@ public class UserTeamInfo {
     private Long id;
 
     /**
-     * 用户项目ID
-     */
-    @Column(name = "ut_id")
-    private Long utId;
-
-    /**
-     * 用户ID
+     * 队长ID
      */
     @Column(name = "user_id")
     private Long userId;
@@ -29,10 +24,14 @@ public class UserTeamInfo {
     private Long teamId;
 
     /**
-     * 是否是队长
+     * 邀请时间
      */
-    @Column(name = "is_leader")
-    private Byte isLeader;
+    private Date date;
+
+    /**
+     * 邀请状态
+     */
+    private String status;
 
     /**
      * 获取ID
@@ -53,36 +52,18 @@ public class UserTeamInfo {
     }
 
     /**
-     * 获取用户项目ID
+     * 获取队长ID
      *
-     * @return ut_id - 用户项目ID
-     */
-    public Long getUtId() {
-        return utId;
-    }
-
-    /**
-     * 设置用户项目ID
-     *
-     * @param utId 用户项目ID
-     */
-    public void setUtId(Long utId) {
-        this.utId = utId;
-    }
-
-    /**
-     * 获取用户ID
-     *
-     * @return user_id - 用户ID
+     * @return user_id - 队长ID
      */
     public Long getUserId() {
         return userId;
     }
 
     /**
-     * 设置用户ID
+     * 设置队长ID
      *
-     * @param userId 用户ID
+     * @param userId 队长ID
      */
     public void setUserId(Long userId) {
         this.userId = userId;
@@ -107,20 +88,38 @@ public class UserTeamInfo {
     }
 
     /**
-     * 获取是否是队长
+     * 获取邀请时间
      *
-     * @return is_leader - 是否是队长
+     * @return date - 邀请时间
      */
-    public Byte getIsLeader() {
-        return isLeader;
+    public Date getDate() {
+        return date;
     }
 
     /**
-     * 设置是否是队长
+     * 设置邀请时间
      *
-     * @param isLeader 是否是队长
+     * @param date 邀请时间
      */
-    public void setIsLeader(Byte isLeader) {
-        this.isLeader = isLeader;
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    /**
+     * 获取邀请状态
+     *
+     * @return status - 邀请状态
+     */
+    public String getStatus() {
+        return status;
+    }
+
+    /**
+     * 设置邀请状态
+     *
+     * @param status 邀请状态
+     */
+    public void setStatus(String status) {
+        this.status = status;
     }
 }

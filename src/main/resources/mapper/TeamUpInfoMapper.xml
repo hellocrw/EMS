@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="crw.bishe.team.mapper.TeamUpInfoMapper">
+  <resultMap id="BaseResultMap" type="crw.bishe.team.entity.TeamUpInfo">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="teamup_id" jdbcType="BIGINT" property="teamupId" />
+    <result column="start_time" jdbcType="BIGINT" property="startTime" />
+    <result column="end_time" jdbcType="DATE" property="endTime" />
+    <result column="describe" jdbcType="VARCHAR" property="describe" />
+  </resultMap>
+</mapper>

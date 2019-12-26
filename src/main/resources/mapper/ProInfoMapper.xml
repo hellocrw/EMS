@@ -5,11 +5,17 @@
     <!--
       WARNING - @mbg.generated
     -->
-    <id column="pro_id" jdbcType="VARCHAR" property="proId" />
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="pro_id" jdbcType="VARCHAR" property="proId" />
     <result column="pro_name" jdbcType="VARCHAR" property="proName" />
     <result column="pro_describe" jdbcType="VARCHAR" property="proDescribe" />
     <result column="pro_date" jdbcType="DATE" property="proDate" />
     <result column="pro_status" jdbcType="VARCHAR" property="proStatus" />
     <result column="team_id" jdbcType="VARCHAR" property="teamId" />
+    <result column="team_name" jdbcType="VARCHAR" property="teamName" />
+    <result column="pro_type" jdbcType="VARCHAR" property="proType" />
+    <result column="number" jdbcType="INTEGER" property="number" />
+    <result column="see_num" jdbcType="INTEGER" property="seeNum" />
+    <result column="staff" jdbcType="TINYINT" property="staff" />
   </resultMap>
 </mapper>

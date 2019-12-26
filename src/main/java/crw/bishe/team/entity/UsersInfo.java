@@ -2,28 +2,28 @@ package crw.bishe.team.entity;
 
 import javax.persistence.*;
 
-@Table(name = "user_info")
-public class UserInfo {
+@Table(name = "users_info")
+public class UsersInfo {
     /**
-     * 用户id
+     * ID
      */
     @Id
+    private Long id;
+
+    /**
+     * 用户ID
+     */
     @Column(name = "user_id")
     private String userId;
 
     /**
-     * 用户名
+     * 用户名称
      */
     @Column(name = "user_name")
     private String userName;
 
     /**
-     * 密码
-     */
-    private String password;
-
-    /**
-     * 用户头像
+     * 头像
      */
     @Column(name = "user_avatar")
     private String userAvatar;
@@ -31,7 +31,7 @@ public class UserInfo {
     /**
      * 性别
      */
-    private String gender;
+    private Byte gender;
 
     /**
      * 学校
@@ -56,7 +56,14 @@ public class UserInfo {
     /**
      * 班级
      */
-    private String uclass;
+    @Column(name = "user_class")
+    private String userClass;
+
+    /**
+     * 学号
+     */
+    @Column(name = "user_no")
+    private Integer userNo;
 
     /**
      * 联系方式
@@ -70,72 +77,77 @@ public class UserInfo {
     private String email;
 
     /**
-     * 获取用户id
+     * 掌握技能、能力
+     */
+    private String ability;
+
+    /**
+     * 获取ID
      *
-     * @return user_id - 用户id
+     * @return id - ID
+     */
+    public Long getId() {
+        return id;
+    }
+
+    /**
+     * 设置ID
+     *
+     * @param id ID
+     */
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    /**
+     * 获取用户ID
+     *
+     * @return user_id - 用户ID
      */
     public String getUserId() {
         return userId;
     }
 
     /**
-     * 设置用户id
+     * 设置用户ID
      *
-     * @param userId 用户id
+     * @param userId 用户ID
      */
     public void setUserId(String userId) {
         this.userId = userId;
     }
 
     /**
-     * 获取用户名
+     * 获取用户名称
      *
-     * @return user_name - 用户名
+     * @return user_name - 用户名称
      */
     public String getUserName() {
         return userName;
     }
 
     /**
-     * 设置用户名
+     * 设置用户名称
      *
-     * @param userName 用户名
+     * @param userName 用户名称
      */
     public void setUserName(String userName) {
         this.userName = userName;
     }
 
     /**
-     * 获取密码
+     * 获取头像
      *
-     * @return password - 密码
-     */
-    public String getPassword() {
-        return password;
-    }
-
-    /**
-     * 设置密码
-     *
-     * @param password 密码
-     */
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    /**
-     * 获取用户头像
-     *
-     * @return user_avatar - 用户头像
+     * @return user_avatar - 头像
      */
     public String getUserAvatar() {
         return userAvatar;
     }
 
     /**
-     * 设置用户头像
+     * 设置头像
      *
-     * @param userAvatar 用户头像
+     * @param userAvatar 头像
      */
     public void setUserAvatar(String userAvatar) {
         this.userAvatar = userAvatar;
@@ -146,7 +158,7 @@ public class UserInfo {
      *
      * @return gender - 性别
      */
-    public String getGender() {
+    public Byte getGender() {
         return gender;
     }
 
@@ -155,7 +167,7 @@ public class UserInfo {
      *
      * @param gender 性别
      */
-    public void setGender(String gender) {
+    public void setGender(Byte gender) {
         this.gender = gender;
     }
 
@@ -234,19 +246,37 @@ public class UserInfo {
     /**
      * 获取班级
      *
-     * @return uclass - 班级
+     * @return user_class - 班级
      */
-    public String getUclass() {
-        return uclass;
+    public String getUserClass() {
+        return userClass;
     }
 
     /**
      * 设置班级
      *
-     * @param uclass 班级
+     * @param userClass 班级
      */
-    public void setUclass(String uclass) {
-        this.uclass = uclass;
+    public void setUserClass(String userClass) {
+        this.userClass = userClass;
+    }
+
+    /**
+     * 获取学号
+     *
+     * @return user_no - 学号
+     */
+    public Integer getUserNo() {
+        return userNo;
+    }
+
+    /**
+     * 设置学号
+     *
+     * @param userNo 学号
+     */
+    public void setUserNo(Integer userNo) {
+        this.userNo = userNo;
     }
 
     /**
@@ -283,5 +313,23 @@ public class UserInfo {
      */
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    /**
+     * 获取掌握技能、能力
+     *
+     * @return ability - 掌握技能、能力
+     */
+    public String getAbility() {
+        return ability;
+    }
+
+    /**
+     * 设置掌握技能、能力
+     *
+     * @param ability 掌握技能、能力
+     */
+    public void setAbility(String ability) {
+        this.ability = ability;
     }
 }
