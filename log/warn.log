@@ -1,0 +1,2 @@
+2020-01-11 00:12 [restartedMain] [WARN]  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)ev  el org.apache.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+2020-01-11 00:12 [restartedMain] [WARN]  org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)ev  el org.apache.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
