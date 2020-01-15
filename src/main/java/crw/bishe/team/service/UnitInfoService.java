@@ -28,7 +28,7 @@ public interface UnitInfoService {
      * @param unitInfo
      * @return
      */
-    int update(UnitInfo unitInfo);
+    int update(UnitInfo unitInfo, Long id);
 
     /**
      * 通过ID查找单位信息

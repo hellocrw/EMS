@@ -48,8 +48,8 @@ public class UnitInfoServiceImpl implements UnitInfoService {
      */
     @Transactional(rollbackFor = Exception.class)
     @Override
-    public int update(UnitInfo unitInfo) {
-        return unitInfoMapper.updateByPrimaryKey(unitInfo);
+    public int update(UnitInfo unitInfo, Long id) {
+        return unitInfoMapper.updateByExample(unitInfo, id);
     }
 
     /**

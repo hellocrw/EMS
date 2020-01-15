@@ -26,12 +26,25 @@ import java.util.List;
 @RestController
 @RequestMapping(value = "/api/user")
 public class UserInfoController {
+
     @Autowired
     private UserInfoService userInfoService;
+
+    @ApiOperation(value = "查找所有用户信息")
+    @GetMapping("/All")
+    public ResponseEntity<Result> findAll(){
+        try{
+            List<UserInfo> res = userInfoService.findAll();
+            return new ResponseEntity<>(new Result(200,"处理成功",res), HttpStatus.OK);
+        }catch (Exception e){
+            return new ResponseEntity(HttpStatus.BAD_REQUEST);
+        }
+    }
+
     @ApiOperation(value = "增加用户信息")
     @PostMapping("")
     public ResponseEntity<Result> create(
-            @ApiParam(value = "新增用户信息") @RequestBody @Validated UserInfo UserInfo){
+            @ApiParam(value = "用户信息") @RequestBody @Validated UserInfo UserInfo){
         try {
             int res = userInfoService.persist(UserInfo);
             if (res > 0) {
@@ -45,20 +58,9 @@ public class UserInfoController {
             }
     }
 
-    @ApiOperation(value = "删除用户信息")
-    @DeleteMapping(value = "")
-    public ResponseEntity<Result> delete(
-            @ApiParam(value = "删除用户信息") @RequestParam Long id){
-        try{
-            userInfoService.delete(id);
-        }catch (Exception e){
-            log.info("用户信息删除失败:" + e.toString());
-        }
-        return new ResponseEntity(new Result<>(200,"处理成功"),HttpStatus.OK);
-    }
     @ApiOperation(value = "修改用户信息")
     @PutMapping(value = "/{id}")
-    public ResponseEntity<Result> update(@ApiParam(value = "更新用户信息", required = true) @RequestBody UserInfo UserInfo,
+    public ResponseEntity<Result> update(@ApiParam(value = "用户信息", required = true) @RequestBody UserInfo UserInfo,
                                          @ApiParam(value = "用户ID") @PathVariable(name = "id") Long id){
         try{
             userInfoService.update(UserInfo,id);
@@ -67,14 +69,17 @@ public class UserInfoController {
         }
         return new ResponseEntity<>(new Result(200,"处理成功"),HttpStatus.OK);
     }
-    @ApiOperation(value = "查找所有用户信息")
-    @GetMapping("/All")
-    public ResponseEntity<Result> findAll(){
+
+    @ApiOperation(value = "删除用户信息")
+    @DeleteMapping(value = "/{id}")
+    public ResponseEntity<Result> delete(
+            @ApiParam(value = "用户信息ID") @PathVariable(name = "id") Long id){
         try{
-            List<UserInfo> res = userInfoService.findAll();
-            return new ResponseEntity<>(new Result(200,"处理成功",res), HttpStatus.OK);
+            userInfoService.delete(id);
         }catch (Exception e){
-            return new ResponseEntity(HttpStatus.BAD_REQUEST);
+            log.info("用户信息删除失败:" + e.toString());
         }
+        return new ResponseEntity(new Result<>(200,"处理成功"),HttpStatus.OK);
     }
+
 }
