@@ -14,6 +14,7 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.UUID;
 
 /**
  * @Description Description
@@ -46,6 +47,7 @@ public class UnitInfoController {
     public ResponseEntity<Result> create(
             @ApiParam(value = "单位信息") @RequestBody @Validated UnitInfo unitInfo){
         try{
+            unitInfo.setId(3);
             int res = unitInfoService.persist(unitInfo);
             if (res > 0){
                 return new ResponseEntity(new Result<>(200,"处理成功"), HttpStatus.OK);
