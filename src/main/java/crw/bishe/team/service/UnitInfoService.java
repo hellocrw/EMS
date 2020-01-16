@@ -1,5 +1,6 @@
 package crw.bishe.team.service;
 
+import crw.bishe.team.dto.UnitInfoDto;
 import crw.bishe.team.entity.UnitInfo;
 
 import java.util.List;
@@ -14,7 +15,7 @@ public interface UnitInfoService {
     /**
      * 增加单位信息
      */
-    int persist(UnitInfo unitInfo);
+    int persist(UnitInfoDto unitInfoDto);
 
     /**
      * 根据ID删除单位信息

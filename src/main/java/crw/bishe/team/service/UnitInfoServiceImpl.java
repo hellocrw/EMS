@@ -1,5 +1,7 @@
 package crw.bishe.team.service;
 
+import crw.bishe.team.dto.UnitInfoDto;
+import crw.bishe.team.dtoEntityMapping.UnitInfoMapping;
 import crw.bishe.team.entity.UnitInfo;
 import crw.bishe.team.mapper.UnitInfoMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,17 +18,24 @@ import java.util.List;
  */
 @Service
 public class UnitInfoServiceImpl implements UnitInfoService {
-    @Autowired
-    private UnitInfoMapper unitInfoMapper;
 
+    private final UnitInfoMapper unitInfoMapper;
+    private final UnitInfoMapping unitInfoMapping;
+
+    @Autowired
+    public UnitInfoServiceImpl(UnitInfoMapper unitInfoMapper, UnitInfoMapping unitInfoMapping){
+        this.unitInfoMapper = unitInfoMapper;
+        this.unitInfoMapping = unitInfoMapping;
+    }
     /**
      * 增加单位信息
-     * @param unitInfo
+     * @param unitInfoDto
      * @return
      */
     @Override
     @Transactional(rollbackFor = Exception.class)
-    public int persist(UnitInfo unitInfo) {
+    public int persist(UnitInfoDto unitInfoDto) {
+        UnitInfo unitInfo = unitInfoMapping.toEntity(unitInfoDto);
         return unitInfoMapper.insert(unitInfo);
     }
 

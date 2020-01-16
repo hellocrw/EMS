@@ -42,7 +42,10 @@ mybatis:
   mapper-locations: classpath:mapping/*.xml
   #mybatis
   configuration:
-    map-underscore-to-camel-case: true
+    map-underscore-to-camel-case: true #开启驼峰命名法
+    #org.apache.ibatis.logging.stdout.StdOutImpl 控制台打印sql语句方便调试sql语句执行错误
+    #org.apache.ibatis.logging.log4j2.Log4j2Impl:这个不在控制台打印查询结果,但是在log4j中打印
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
   type-aliases-package: crw.bishe.team.entity
 
 web:
@@ -70,3 +73,6 @@ server:
     session:
       timeout: 60m
 
+logging:
+  level:
+    crw.bishe.team.mapper: debug
