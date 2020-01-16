@@ -1,5 +1,7 @@
 package crw.bishe.team.controller;
 
+import crw.bishe.team.dto.UnitInfoDto;
+import crw.bishe.team.dtoEntityMapping.UnitInfoMapping;
 import crw.bishe.team.entity.UnitInfo;
 import crw.bishe.team.service.UnitInfoService;
 import crw.bishe.team.vo.Result;
@@ -28,8 +30,12 @@ import java.util.UUID;
 @RequestMapping(value = "/api/unit")
 public class UnitInfoController {
 
+    private final UnitInfoService unitInfoService;
+
     @Autowired
-    private UnitInfoService unitInfoService;
+    public UnitInfoController(UnitInfoService unitInfoService){
+        this.unitInfoService = unitInfoService;
+    }
 
     @ApiOperation(value = "查找所有单位信息")
     @GetMapping("/All")
@@ -45,10 +51,9 @@ public class UnitInfoController {
     @ApiOperation(value = "增加单位信息")
     @PostMapping("")
     public ResponseEntity<Result> create(
-            @ApiParam(value = "单位信息") @RequestBody @Validated UnitInfo unitInfo){
+            @ApiParam(value = "单位信息") @RequestBody @Validated UnitInfoDto unitInfoDto){
         try{
-            unitInfo.setId(3);
-            int res = unitInfoService.persist(unitInfo);
+            int res = unitInfoService.persist(unitInfoDto);
             if (res > 0){
                 return new ResponseEntity(new Result<>(200,"处理成功"), HttpStatus.OK);
             }
