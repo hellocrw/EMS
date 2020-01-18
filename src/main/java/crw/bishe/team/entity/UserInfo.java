@@ -5,283 +5,123 @@ import javax.persistence.*;
 @Table(name = "user_info")
 public class UserInfo {
     /**
-     * 用户id
+     * 序号
      */
     @Id
-    @Column(name = "user_id")
-    private String userId;
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    private Long id;
 
     /**
-     * 用户名
+     * 用户编号
      */
-    @Column(name = "user_name")
-    private String userName;
+    @Column(name = "userNo")
+    private Integer userno;
 
     /**
-     * 密码
+     * 用户昵称
      */
-    private String password;
+    @Column(name = "userName")
+    private String username;
 
     /**
-     * 用户头像
+     * 用户类型
      */
-    @Column(name = "user_avatar")
-    private String userAvatar;
+    @Column(name = "userType")
+    private Byte usertype;
 
     /**
-     * 性别
+     * 头像Url
      */
-    private String gender;
+    @Column(name = "imageUrl")
+    private String imageurl;
 
     /**
-     * 学校
-     */
-    private String university;
-
-    /**
-     * 学院
-     */
-    private String college;
-
-    /**
-     * 专业
-     */
-    private String profession;
-
-    /**
-     * 年级
-     */
-    private String grade;
-
-    /**
-     * 班级
-     */
-    private String uclass;
-
-    /**
-     * 联系方式
-     */
-    @Column(name = "user_tel")
-    private String userTel;
-
-    /**
-     * 邮箱
-     */
-    private String email;
-
-    /**
-     * 获取用户id
+     * 获取序号
      *
-     * @return user_id - 用户id
+     * @return id - 序号
      */
-    public String getUserId() {
-        return userId;
+    public Long getId() {
+        return id;
     }
 
     /**
-     * 设置用户id
+     * 设置序号
      *
-     * @param userId 用户id
+     * @param id 序号
      */
-    public void setUserId(String userId) {
-        this.userId = userId;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     /**
-     * 获取用户名
+     * 获取用户编号
      *
-     * @return user_name - 用户名
+     * @return userNo - 用户编号
      */
-    public String getUserName() {
-        return userName;
+    public Integer getUserno() {
+        return userno;
     }
 
     /**
-     * 设置用户名
+     * 设置用户编号
      *
-     * @param userName 用户名
+     * @param userno 用户编号
      */
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setUserno(Integer userno) {
+        this.userno = userno;
     }
 
     /**
-     * 获取密码
+     * 获取用户昵称
      *
-     * @return password - 密码
+     * @return userName - 用户昵称
      */
-    public String getPassword() {
-        return password;
+    public String getUsername() {
+        return username;
     }
 
     /**
-     * 设置密码
+     * 设置用户昵称
      *
-     * @param password 密码
+     * @param username 用户昵称
      */
-    public void setPassword(String password) {
-        this.password = password;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     /**
-     * 获取用户头像
+     * 获取用户类型
      *
-     * @return user_avatar - 用户头像
+     * @return userType - 用户类型
      */
-    public String getUserAvatar() {
-        return userAvatar;
+    public Byte getUsertype() {
+        return usertype;
     }
 
     /**
-     * 设置用户头像
+     * 设置用户类型
      *
-     * @param userAvatar 用户头像
+     * @param usertype 用户类型
      */
-    public void setUserAvatar(String userAvatar) {
-        this.userAvatar = userAvatar;
+    public void setUsertype(Byte usertype) {
+        this.usertype = usertype;
     }
 
     /**
-     * 获取性别
+     * 获取头像Url
      *
-     * @return gender - 性别
+     * @return imageUrl - 头像Url
      */
-    public String getGender() {
-        return gender;
+    public String getImageurl() {
+        return imageurl;
     }
 
     /**
-     * 设置性别
+     * 设置头像Url
      *
-     * @param gender 性别
+     * @param imageurl 头像Url
      */
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
-
-    /**
-     * 获取学校
-     *
-     * @return university - 学校
-     */
-    public String getUniversity() {
-        return university;
-    }
-
-    /**
-     * 设置学校
-     *
-     * @param university 学校
-     */
-    public void setUniversity(String university) {
-        this.university = university;
-    }
-
-    /**
-     * 获取学院
-     *
-     * @return college - 学院
-     */
-    public String getCollege() {
-        return college;
-    }
-
-    /**
-     * 设置学院
-     *
-     * @param college 学院
-     */
-    public void setCollege(String college) {
-        this.college = college;
-    }
-
-    /**
-     * 获取专业
-     *
-     * @return profession - 专业
-     */
-    public String getProfession() {
-        return profession;
-    }
-
-    /**
-     * 设置专业
-     *
-     * @param profession 专业
-     */
-    public void setProfession(String profession) {
-        this.profession = profession;
-    }
-
-    /**
-     * 获取年级
-     *
-     * @return grade - 年级
-     */
-    public String getGrade() {
-        return grade;
-    }
-
-    /**
-     * 设置年级
-     *
-     * @param grade 年级
-     */
-    public void setGrade(String grade) {
-        this.grade = grade;
-    }
-
-    /**
-     * 获取班级
-     *
-     * @return uclass - 班级
-     */
-    public String getUclass() {
-        return uclass;
-    }
-
-    /**
-     * 设置班级
-     *
-     * @param uclass 班级
-     */
-    public void setUclass(String uclass) {
-        this.uclass = uclass;
-    }
-
-    /**
-     * 获取联系方式
-     *
-     * @return user_tel - 联系方式
-     */
-    public String getUserTel() {
-        return userTel;
-    }
-
-    /**
-     * 设置联系方式
-     *
-     * @param userTel 联系方式
-     */
-    public void setUserTel(String userTel) {
-        this.userTel = userTel;
-    }
-
-    /**
-     * 获取邮箱
-     *
-     * @return email - 邮箱
-     */
-    public String getEmail() {
-        return email;
-    }
-
-    /**
-     * 设置邮箱
-     *
-     * @param email 邮箱
-     */
-    public void setEmail(String email) {
-        this.email = email;
+    public void setImageurl(String imageurl) {
+        this.imageurl = imageurl;
     }
 }

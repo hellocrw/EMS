@@ -5,17 +5,10 @@
     <!--
       WARNING - @mbg.generated
     -->
-    <id column="user_id" jdbcType="VARCHAR" property="userId" />
-    <result column="user_name" jdbcType="VARCHAR" property="userName" />
-    <result column="password" jdbcType="VARCHAR" property="password" />
-    <result column="user_avatar" jdbcType="VARCHAR" property="userAvatar" />
-    <result column="gender" jdbcType="CHAR" property="gender" />
-    <result column="university" jdbcType="VARCHAR" property="university" />
-    <result column="college" jdbcType="VARCHAR" property="college" />
-    <result column="profession" jdbcType="VARCHAR" property="profession" />
-    <result column="grade" jdbcType="VARCHAR" property="grade" />
-    <result column="uclass" jdbcType="VARCHAR" property="uclass" />
-    <result column="user_tel" jdbcType="VARCHAR" property="userTel" />
-    <result column="email" jdbcType="VARCHAR" property="email" />
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="userNo" jdbcType="INTEGER" property="userno" />
+    <result column="userName" jdbcType="VARCHAR" property="username" />
+    <result column="userType" jdbcType="TINYINT" property="usertype" />
+    <result column="imageUrl" jdbcType="VARCHAR" property="imageurl" />
   </resultMap>
 </mapper>
