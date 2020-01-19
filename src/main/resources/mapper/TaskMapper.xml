@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="crw.bishe.team.mapper.TaskMapper">
+  <resultMap id="BaseResultMap" type="crw.bishe.team.entity.Task">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="task_id" jdbcType="BIGINT" property="taskId" />
+    <result column="team_id" jdbcType="BIGINT" property="teamId" />
+    <result column="pro_id" jdbcType="BIGINT" property="proId" />
+    <result column="task_create_time" jdbcType="DATE" property="taskCreateTime" />
+    <result column="task_start_time" jdbcType="DATE" property="taskStartTime" />
+    <result column="task_end_time" jdbcType="DATE" property="taskEndTime" />
+    <result column="task_content" jdbcType="VARCHAR" property="taskContent" />
+    <result column="task_charger" jdbcType="VARCHAR" property="taskCharger" />
+    <result column="sub_task_id" jdbcType="BIGINT" property="subTaskId" />
+    <result column="task_status" jdbcType="TINYINT" property="taskStatus" />
+    <result column="task_mark" jdbcType="VARCHAR" property="taskMark" />
+  </resultMap>
+</mapper>

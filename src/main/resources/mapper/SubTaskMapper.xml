@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="crw.bishe.team.mapper.SubTaskMapper">
+  <resultMap id="BaseResultMap" type="crw.bishe.team.entity.SubTask">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="sub_task_id" jdbcType="BIGINT" property="subTaskId" />
+    <result column="sub_task_content" jdbcType="VARCHAR" property="subTaskContent" />
+    <result column="sub_task_charger" jdbcType="VARCHAR" property="subTaskCharger" />
+    <result column="sub_task_status" jdbcType="TINYINT" property="subTaskStatus" />
+  </resultMap>
+</mapper>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="crw.bishe.team.mapper.UniversityMapper">
+  <resultMap id="BaseResultMap" type="crw.bishe.team.entity.University">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="university" jdbcType="VARCHAR" property="university" />
+    <result column="college" jdbcType="VARCHAR" property="college" />
+    <result column="profession" jdbcType="VARCHAR" property="profession" />
+  </resultMap>
+</mapper>

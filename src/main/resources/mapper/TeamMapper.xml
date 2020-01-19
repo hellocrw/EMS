@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="crw.bishe.team.mapper.TeamMapper">
+  <resultMap id="BaseResultMap" type="crw.bishe.team.entity.Team">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="team_id" jdbcType="BIGINT" property="teamId" />
+    <result column="team_name" jdbcType="VARCHAR" property="teamName" />
+    <result column="leader_id" jdbcType="BIGINT" property="leaderId" />
+    <result column="team_describe" jdbcType="VARCHAR" property="teamDescribe" />
+    <result column="team_type" jdbcType="VARCHAR" property="teamType" />
+    <result column="team_number" jdbcType="INTEGER" property="teamNumber" />
+    <result column="team_date" jdbcType="DATE" property="teamDate" />
+    <result column="status" jdbcType="TINYINT" property="status" />
+    <result column="staff" jdbcType="VARCHAR" property="staff" />
+  </resultMap>
+</mapper>

@@ -1,5 +1,6 @@
 package crw.bishe.team.controller;
 
+import io.swagger.annotations.Api;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @Date Created in 2019/12/20 0020
  * @Time 14:00
  */
+@Api(tags = {"测试接口"})
 @RestController
 @ResponseBody
 public class TestController {
@@ -21,7 +23,7 @@ public class TestController {
     }
 
     @GetMapping(value = "/out")
-    @PreAuthorize("hasRole('USER')")
+    @PreAuthorize("hasRole('ADMIN')")
     public String logout(){
         return "退出成功";
     }

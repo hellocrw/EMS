@@ -13,7 +13,7 @@
         </plugin>
 
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://localhost:3306/teamup_02"
+                        connectionURL="jdbc:mysql://localhost:3306/team_01"
                         userId="root"
                         password="123456">
         </jdbcConnection>
@@ -28,17 +28,19 @@
                              targetProject="src/main/java"
                              type="XMLMAPPER"/>
 
-        <!--<table tableName="archives_where_abouts"/>-->
-        <!--<table tableName="class_info"/>-->
-        <!--<table tableName="counselor_info"/>-->
-        <!--<table tableName="employ_style_pre"/>-->
-        <!--<table tableName="job_info"/>-->
-        <!--<table tableName="stu_employ_info"/>-->
-        <!--<table tableName="student_info"/>-->
-        <!--<table tableName="unit_info"/>-->
-        <!--<table tableName="file_info"/>-->
-        <!--<table tableName="user_info"/>-->
-        <table tableName="admin_info"/>
+        <table tableName="user_team"/>
+        <table tableName="user"/>
+        <table tableName="university"/>
+        <table tableName="team"/>
+        <table tableName="task"/>
+        <table tableName="sub_task"/>
+        <table tableName="role"/>
+        <table tableName="pw"/>
+        <table tableName="project"/>
+        <table tableName="log"/>
+        <table tableName="invite"/>
+        <table tableName="apply"/>
+        <table tableName="annex"/>
 
     </context>
 </generatorConfiguration>

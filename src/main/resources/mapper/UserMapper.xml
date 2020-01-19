@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="crw.bishe.team.mapper.UserMapper">
+  <resultMap id="BaseResultMap" type="crw.bishe.team.entity.User">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="user_id" jdbcType="VARCHAR" property="userId" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="user_avatar" jdbcType="VARCHAR" property="userAvatar" />
+    <result column="gender" jdbcType="TINYINT" property="gender" />
+    <result column="university" jdbcType="VARCHAR" property="university" />
+    <result column="college" jdbcType="VARCHAR" property="college" />
+    <result column="profession" jdbcType="VARCHAR" property="profession" />
+    <result column="grade" jdbcType="VARCHAR" property="grade" />
+    <result column="user_class" jdbcType="VARCHAR" property="userClass" />
+    <result column="user_no" jdbcType="INTEGER" property="userNo" />
+    <result column="user_tel" jdbcType="VARCHAR" property="userTel" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="ability" jdbcType="VARCHAR" property="ability" />
+  </resultMap>
+</mapper>

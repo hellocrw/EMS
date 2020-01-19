@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="crw.bishe.team.mapper.ProjectMapper">
+  <resultMap id="BaseResultMap" type="crw.bishe.team.entity.Project">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="pro_id" jdbcType="VARCHAR" property="proId" />
+    <result column="pro_name" jdbcType="VARCHAR" property="proName" />
+    <result column="leader_name" jdbcType="VARCHAR" property="leaderName" />
+    <result column="pro_describe" jdbcType="VARCHAR" property="proDescribe" />
+    <result column="pro_date" jdbcType="DATE" property="proDate" />
+    <result column="pro_start_time" jdbcType="DATE" property="proStartTime" />
+    <result column="pro_end_time" jdbcType="DATE" property="proEndTime" />
+    <result column="pro_status" jdbcType="VARCHAR" property="proStatus" />
+    <result column="team_id" jdbcType="VARCHAR" property="teamId" />
+    <result column="team_name" jdbcType="VARCHAR" property="teamName" />
+    <result column="pro_type" jdbcType="VARCHAR" property="proType" />
+    <result column="pro_current_num" jdbcType="INTEGER" property="proCurrentNum" />
+    <result column="pro_limied_num" jdbcType="INTEGER" property="proLimiedNum" />
+    <result column="number" jdbcType="INTEGER" property="number" />
+    <result column="see_num" jdbcType="INTEGER" property="seeNum" />
+    <result column="staff" jdbcType="TINYINT" property="staff" />
+  </resultMap>
+</mapper>
