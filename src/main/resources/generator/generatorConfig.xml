@@ -13,7 +13,7 @@
         </plugin>
 
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://localhost:3306/team_01"
+                        connectionURL="jdbc:mysql://localhost:3306/teamup_02"
                         userId="root"
                         password="123456">
         </jdbcConnection>
